@@ -29,9 +29,11 @@ initial examples how to use the library in your own code.
 
 ## Compilation
 
-The provided static library and examples can be compiled using [make](https://www.gnu.org/software/make/) utility. Therefore, it requires Windows users to have some Linux-like environment, such as [Cygwin](https://www.cygwin.com/) or [MinGW](http://www.mingw.org/). However, the other possible option is to use [nmake](https://msdn.microsoft.com/en-us/library/dd9y37ha.aspx) utility from Visual Studio (see [`Compilation with nmake`](#compilation-with-nmake)). 
+The provided static library and examples can be compiled using [make](https://www.gnu.org/software/make/) utility. Therefore, it requires Windows users to have some Linux-like environment, such as [Cygwin](https://www.cygwin.com/), or [MinGW](http://www.mingw.org/) and [MSYS2](https://www.msys2.org/). However, the other possible option is to use [nmake](https://msdn.microsoft.com/en-us/library/dd9y37ha.aspx) utility from Visual Studio (see [`Compilation with nmake`](#compilation-with-nmake)). 
 
 The following steps are necessary for compilation:
+
+* If you use MSYS2, launch the MSYS2 console, and add to the path your compiler environment. If you are using Octave, you must use the same compiler that you will use to generate the Mex files in Octave. In this case, add to the path the Octave-provided version of GCC, e.g. "<OctaveInstallationPath>\Octave-4.4.0\bin" where <OctaveInstallationPath> is your Octave installation path, and assuming Octave version 4.4.0.
 
 * Go to the [`./settings`](/settings) directory and create or copy-modify platform-specific `Makefile.your_cpu_alias`. Here the `your_cpu_alias` is an alias for your system compiler (like intel, gcc620, clang or so). This alias is just an abbreviation to distinguish different Makefiles and can be any name you like.
 

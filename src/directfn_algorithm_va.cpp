@@ -4,6 +4,7 @@
 #include "directfn_kernel_tri.h"
 #include "directfn_kernel_quad_scal.h"
 #include "directfn_kernel_quad_vect.h"
+#include "directfn_kernel_quad_voxhenry.h"
 
 using  std::cout;
 using  std::endl;
@@ -239,6 +240,15 @@ template class DirectfnAlgorithm_VA<QuadrilateralKernel_PlanarVectorWS>;
 template class DirectfnAlgorithm_VA<QuadrilateralKernel_PlanarVectorSS>;
 // .. nxRWG?
 
+template class DirectfnAlgorithm_VA<QuadKer_PlanVH_VolKer2_KerTyp1>;
+template class DirectfnAlgorithm_VA<QuadKer_PlanVH_VolKer2_KerTyp2>;
+template class DirectfnAlgorithm_VA<QuadKer_PlanVH_VolKer2_KerTyp3>;
+template class DirectfnAlgorithm_VA<QuadKer_PlanVH_VolKer2_KerTyp4>;
+template class DirectfnAlgorithm_VA<QuadKer_PlanVH_VolKer3_KerTyp1>;
+template class DirectfnAlgorithm_VA<QuadKer_PlanVH_VolKer3_KerTyp2>;
+template class DirectfnAlgorithm_VA<QuadKer_PlanVH_VolKer3_KerTyp3>;
+template class DirectfnAlgorithm_VA<QuadKer_PlanVH_VolKer3_KerTyp4>;
+
 template class DirectfnAlgorithm_VA<QuadrilateralKernel_CurvilinearScalar>;
 template class DirectfnAlgorithm_VA<QuadrilateralKernel_CurvilinearVectorWS>;
 template class DirectfnAlgorithm_VA<QuadrilateralKernel_CurvilinearVectorSS>;
@@ -455,6 +465,15 @@ void Quadrilateral_VA<ParticularKernel>::va_make_simplex(double uvxi_p_out[3], c
 template class Quadrilateral_VA<QuadrilateralKernel_PlanarScalar>;
 template class Quadrilateral_VA<QuadrilateralKernel_PlanarVectorWS>;
 template class Quadrilateral_VA<QuadrilateralKernel_PlanarVectorSS>;
+
+template class Quadrilateral_VA<QuadKer_PlanVH_VolKer2_KerTyp1>;
+template class Quadrilateral_VA<QuadKer_PlanVH_VolKer2_KerTyp2>;
+template class Quadrilateral_VA<QuadKer_PlanVH_VolKer2_KerTyp3>;
+template class Quadrilateral_VA<QuadKer_PlanVH_VolKer2_KerTyp4>;
+template class Quadrilateral_VA<QuadKer_PlanVH_VolKer3_KerTyp1>;
+template class Quadrilateral_VA<QuadKer_PlanVH_VolKer3_KerTyp2>;
+template class Quadrilateral_VA<QuadKer_PlanVH_VolKer3_KerTyp3>;
+template class Quadrilateral_VA<QuadKer_PlanVH_VolKer3_KerTyp4>;
 
 template class Quadrilateral_VA<QuadrilateralKernel_CurvilinearScalar>;
 template class Quadrilateral_VA<QuadrilateralKernel_CurvilinearVectorWS>;

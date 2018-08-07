@@ -4,8 +4,10 @@
 #include "directfn_interface.h"
 #include "directfn_kernel_base.h"
 #include "directfn_kernel_tri.h"
+#include "directfn_kernel_quad_voxhenry.h"
 #include "directfn_kernel_quad_scal.h"
 #include "directfn_kernel_quad_vect.h"
+#include "directfn_kernel_quad_voxhenry.h"
 
 using  std::cout;
 using  std::cerr;
@@ -48,6 +50,15 @@ template class KernelArrayInterface<TriangularKernel_nxRWG_SS>;
 template class KernelArrayInterface<QuadrilateralKernel_PlanarScalar>;
 template class KernelArrayInterface<QuadrilateralKernel_PlanarVectorWS>;
 template class KernelArrayInterface<QuadrilateralKernel_PlanarVectorSS>;
+
+template class KernelArrayInterface<QuadKer_PlanVH_VolKer2_KerTyp1>;
+template class KernelArrayInterface<QuadKer_PlanVH_VolKer2_KerTyp2>;
+template class KernelArrayInterface<QuadKer_PlanVH_VolKer2_KerTyp3>;
+template class KernelArrayInterface<QuadKer_PlanVH_VolKer2_KerTyp4>;
+template class KernelArrayInterface<QuadKer_PlanVH_VolKer3_KerTyp1>;
+template class KernelArrayInterface<QuadKer_PlanVH_VolKer3_KerTyp2>;
+template class KernelArrayInterface<QuadKer_PlanVH_VolKer3_KerTyp3>;
+template class KernelArrayInterface<QuadKer_PlanVH_VolKer3_KerTyp4>;
 
 template class KernelArrayInterface<QuadrilateralKernel_CurvilinearScalar>;
 template class KernelArrayInterface<QuadrilateralKernel_CurvilinearVectorWS>;
@@ -209,6 +220,15 @@ template class KernelArray<TriangularKernel_nxRWG_SS>;
 template class KernelArray<QuadrilateralKernel_PlanarScalar>;
 template class KernelArray<QuadrilateralKernel_PlanarVectorWS>;
 template class KernelArray<QuadrilateralKernel_PlanarVectorSS>;
+
+template class KernelArray<QuadKer_PlanVH_VolKer2_KerTyp1>;
+template class KernelArray<QuadKer_PlanVH_VolKer2_KerTyp2>;
+template class KernelArray<QuadKer_PlanVH_VolKer2_KerTyp3>;
+template class KernelArray<QuadKer_PlanVH_VolKer2_KerTyp4>;
+template class KernelArray<QuadKer_PlanVH_VolKer3_KerTyp1>;
+template class KernelArray<QuadKer_PlanVH_VolKer3_KerTyp2>;
+template class KernelArray<QuadKer_PlanVH_VolKer3_KerTyp3>;
+template class KernelArray<QuadKer_PlanVH_VolKer3_KerTyp4>;
 
 template class KernelArray<QuadrilateralKernel_CurvilinearScalar>;
 template class KernelArray<QuadrilateralKernel_CurvilinearVectorWS>;

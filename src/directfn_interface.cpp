@@ -4,6 +4,7 @@
 #include "directfn_kernel_tri.h"
 #include "directfn_kernel_quad_scal.h"
 #include "directfn_kernel_quad_vect.h"
+#include "directfn_kernel_quad_voxhenry.h"
 
 using std::cout;
 using std::endl;
@@ -172,6 +173,15 @@ template class DirectfnInterface<TriangularKernel_nxRWG_SS>;
 template class DirectfnInterface<QuadrilateralKernel_PlanarScalar>;
 template class DirectfnInterface<QuadrilateralKernel_PlanarVectorWS>;
 template class DirectfnInterface<QuadrilateralKernel_PlanarVectorSS>;
+
+template class DirectfnInterface<QuadKer_PlanVH_VolKer2_KerTyp1>;
+template class DirectfnInterface<QuadKer_PlanVH_VolKer2_KerTyp2>;
+template class DirectfnInterface<QuadKer_PlanVH_VolKer2_KerTyp3>;
+template class DirectfnInterface<QuadKer_PlanVH_VolKer2_KerTyp4>;
+template class DirectfnInterface<QuadKer_PlanVH_VolKer3_KerTyp1>;
+template class DirectfnInterface<QuadKer_PlanVH_VolKer3_KerTyp2>;
+template class DirectfnInterface<QuadKer_PlanVH_VolKer3_KerTyp3>;
+template class DirectfnInterface<QuadKer_PlanVH_VolKer3_KerTyp4>;
 
 template class DirectfnInterface<QuadrilateralKernel_CurvilinearScalar>;
 template class DirectfnInterface<QuadrilateralKernel_CurvilinearVectorWS>;

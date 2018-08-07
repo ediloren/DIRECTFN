@@ -14,17 +14,21 @@ SOURCES = directfn_common.cpp \
           directfn_contour.cpp \
           directfn_gl_1d.cpp \
           directfn_greenfunc.cpp \
+          directfn_greenfunc_voxhenry.cpp \
           directfn_kernel_base.cpp \
           directfn_kernel_tri.cpp \
           directfn_kernel_quad_geom.cpp \
           directfn_kernel_quad_scal.cpp \
           directfn_kernel_quad_vect.cpp \
+          directfn_kernel_quad_voxhenry.cpp \
           directfn_kernel_arrsum.cpp \
           directfn_interface.cpp \
           directfn_algorithm_st.cpp \
           directfn_algorithm_ea.cpp \
           directfn_algorithm_va.cpp \
+          directfn_algorithm_voxhenry.cpp \
           directfn_quad.cpp \
+          directfn_quad_voxhenry.cpp \
           directfn_triag.cpp
 
 
@@ -33,17 +37,21 @@ HEADERS = $(HIP)/directfn_common.h \
           $(HIP)/directfn_contour.h \
           $(HIP)/directfn_defs.h \
           $(HIP)/directfn_greenfunc.h \
+          $(HIP)/directfn_greenfunc_voxhenry.h \
           $(HIP)/directfn_kernel_base.h \
           $(HIP)/directfn_kernel_tri.h \
           $(HIP)/directfn_kernel_quad_geom.h \
           $(HIP)/directfn_kernel_quad_scal.h \
           $(HIP)/directfn_kernel_quad_vect.h \
+          $(HIP)/directfn_kernel_quad_voxhenry.h \
           $(HIP)/directfn_kernel_arrsum.h \
           $(HIP)/directfn_interface.h \
           $(HIP)/directfn_algorithm_st.h \
           $(HIP)/directfn_algorithm_ea.h \
           $(HIP)/directfn_algorithm_va.h \
+          $(HIP)/directfn_algorithm_voxhenry.h \
           $(HIP)/directfn_quad.h \
+          $(HIP)/directfn_quad_voxhenry.h \
           $(HIP)/directfn_triag.h
 
 

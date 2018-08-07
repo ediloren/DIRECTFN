@@ -4,6 +4,7 @@
 #include "directfn_kernel_tri.h"
 #include "directfn_kernel_quad_scal.h"
 #include "directfn_kernel_quad_vect.h"
+#include "directfn_kernel_quad_voxhenry.h"
 
 using  std::cout;
 using  std::endl;
@@ -220,6 +221,15 @@ template class DirectfnAlgorithm_ST<TriangularKernel_RWG_WS>;
 // Instantiation of the Quadrilateral Planar Kernels
 template class DirectfnAlgorithm_ST<QuadrilateralKernel_PlanarScalar>;
 template class DirectfnAlgorithm_ST<QuadrilateralKernel_PlanarVectorWS>;
+
+template class DirectfnAlgorithm_ST<QuadKer_PlanVH_VolKer2_KerTyp1>;
+template class DirectfnAlgorithm_ST<QuadKer_PlanVH_VolKer2_KerTyp2>;
+template class DirectfnAlgorithm_ST<QuadKer_PlanVH_VolKer2_KerTyp3>;
+template class DirectfnAlgorithm_ST<QuadKer_PlanVH_VolKer2_KerTyp4>;
+template class DirectfnAlgorithm_ST<QuadKer_PlanVH_VolKer3_KerTyp1>;
+template class DirectfnAlgorithm_ST<QuadKer_PlanVH_VolKer3_KerTyp2>;
+template class DirectfnAlgorithm_ST<QuadKer_PlanVH_VolKer3_KerTyp3>;
+template class DirectfnAlgorithm_ST<QuadKer_PlanVH_VolKer3_KerTyp4>;
 
 template class DirectfnAlgorithm_ST<QuadrilateralKernel_CurvilinearScalar>;
 template class DirectfnAlgorithm_ST<QuadrilateralKernel_CurvilinearVectorWS>;
@@ -581,6 +591,15 @@ void Quadrilateral_ST<ParticularKernel>::quad_st_lamlims_56_(const double U_inp,
 template class Quadrilateral_ST<QuadrilateralKernel_PlanarScalar>;
 template class Quadrilateral_ST<QuadrilateralKernel_PlanarVectorWS>;
 template class Quadrilateral_ST<QuadrilateralKernel_PlanarVectorSS>;
+
+template class Quadrilateral_ST<QuadKer_PlanVH_VolKer2_KerTyp1>;
+template class Quadrilateral_ST<QuadKer_PlanVH_VolKer2_KerTyp2>;
+template class Quadrilateral_ST<QuadKer_PlanVH_VolKer2_KerTyp3>;
+template class Quadrilateral_ST<QuadKer_PlanVH_VolKer2_KerTyp4>;
+template class Quadrilateral_ST<QuadKer_PlanVH_VolKer3_KerTyp1>;
+template class Quadrilateral_ST<QuadKer_PlanVH_VolKer3_KerTyp2>;
+template class Quadrilateral_ST<QuadKer_PlanVH_VolKer3_KerTyp3>;
+template class Quadrilateral_ST<QuadKer_PlanVH_VolKer3_KerTyp4>;
 
 template class Quadrilateral_ST<QuadrilateralKernel_CurvilinearScalar>;
 template class Quadrilateral_ST<QuadrilateralKernel_CurvilinearVectorWS>;
